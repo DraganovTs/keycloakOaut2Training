@@ -26,8 +26,31 @@
             </tr>
         </table>
 
+        <a
+                th:href="@{/user}"
+                class="mt-6 block bg-gray-50 border border-gray-200 rounded p-3 hover:bg-gray-100 hover:border-gray-400 transition">
+            <div class="font-semibold text-gray-900">User Dashboard</div>
+            <div class="text-sm text-gray-600">Only User Access</div>
+        </a>
+
+        <a
+                th:href="@{/manager}"
+                class="mt-2 block bg-blue-50 border border-blue-200 rounded p-3 hover:bg-blue-100 hover:border-blue-400 transition">
+            <div class="font-semibold text-gray-900">Manager Dashboard</div>
+            <div class="text-sm text-gray-600">Only Manager Access</div>
+        </a>
+
+        <a
+                th:href="@{/admin}"
+                class="mt-2 mb-2 block bg-red-50 border border-red-200 rounded p-3 hover:bg-red-100 hover:border-red-400 transition">
+            <div class="font-semibold text-gray-900">Admin Dashboard</div>
+            <div class="text-sm text-gray-600">Only Admin Access</div>
+        </a>
+
         <form th:action="@{/logout}" method="post">
-            <button class="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded font-medium hover:ng-red-700" type="submit">Logout</button>
+            <button class="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded font-medium hover:ng-red-700"
+                    type="submit">Logout
+            </button>
         </form>
 
     </div>
